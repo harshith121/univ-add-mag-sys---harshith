@@ -1,4 +1,4 @@
-{
+{:
 
 #include <iostream>
 
@@ -144,9 +144,6 @@ struct student {
 
               case '5':
               fclose(fp);
-              cout << "\n\n";
-              cout << "\t\t     THANK YOU FOR USING THIS SOFTWARE";
-              cout << "\n\n";
               exit(0);
           }
      }
