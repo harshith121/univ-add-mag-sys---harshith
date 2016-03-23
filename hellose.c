@@ -1,4 +1,3 @@
-{:
 
 #include <iostream>
 
@@ -57,17 +56,11 @@ struct student {
      system("cls");
 
      cout << "\t\t====== STUDENT INFORMATION SYSTEM ======";
-     cout <<"\n\n                                          ";
-     cout << "\n\n";
-     cout<<" \n\t\t\t======================";
-     cout << "\n \t\t\t  1. Add    Records";
-     cout << "\n \t\t\t  2. List   Records";
-     cout << "\n \t\t\t  3. Modify Records";
-     cout << "\n \t\t\t  4. Delete Records";
-     cout << "\n \t\t\t  5. Exit   Program";
-     cout<<" \n\t\t\t======================";
-     cout << "\n\n";
-     cout << "\t\t\t Select Your Choice ::";
+     cout << "\n  1. Add ";
+     cout << "\n  2. List ";
+     cout << "\n 3.modify";
+     cout<<"\n 4.exit";
+     cout << " Select Your Choice ::";
      fflush(stdin);
      choice = getche();
      switch(choice)
@@ -99,10 +92,9 @@ struct student {
            cout << "\n";
            while (fread(&e,recsize,1,fp) == 1){
            cout << "\n";
-           cout <<"\nName     :: " <<e.first_name <<" "<<e.last_name;
-           //cout << "\n";
-           cout <<"\nCourse   :: " <<e.course ;
-           cout <<"\nSection  :: "<<e.section;
+           cout <<"\nName" <<e.first_name <<" "<<e.last_name;
+           cout <<"\nCourse" <<e.course ;
+           cout <<"\nSection"<<e.section;
            }
            cout << "\n\n";
            system("pause");
@@ -142,7 +134,7 @@ struct student {
             }
             break;
 
-              case '5':
+              case '4':
               fclose(fp);
               exit(0);
           }
@@ -150,4 +142,3 @@ struct student {
 em("pause");
 return 0;
 }
-
